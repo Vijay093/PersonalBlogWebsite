@@ -12,8 +12,8 @@ from flask_gravatar import Gravatar
 from functools import wraps
 from flask import abort
 import os
-from dotenv import load_dotenv
-load_dotenv()
+# from dotenv import load_dotenv
+# load_dotenv()
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
